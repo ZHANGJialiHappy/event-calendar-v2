@@ -1,7 +1,7 @@
 import {Calendar, momentLocalizer} from "react-big-calendar";
 import moment from "moment";
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import "../node_modules/react-big-calendar/lib/css/react-big-calendar.css";
 
 const localizer = momentLocalizer(moment)
 
@@ -11,7 +11,7 @@ const MyCalendar = (props: any) => {
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>my event calendar</title>
       </Head>
